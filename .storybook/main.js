@@ -8,11 +8,13 @@ module.exports = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
-    "storybook-addon-next",
   ],
   framework: "@storybook/react",
   core: {
     builder: "@storybook/builder-webpack5",
+  },
+  features: {
+    emotionAlias: true,
   },
   typescript: { reactDocgen: false },
   webpackFinal: async (config) => {
@@ -20,17 +22,18 @@ module.exports = {
       test: /\.scss$/,
       use: ["style-loader", "css-loader", "sass-loader"],
     });
-    config.resolve.modules = [
-      ...(config.resolve.modules || []),
-      path.resolve(__dirname, "../src"),
-    ];
-
     config.resolve.plugins = [
       new TsconfigPathsPlugin({
         configFile: path.resolve(__dirname, "../src"),
       }),
     ];
-
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      src: path.resolve(__dirname, "../src"),
+      "@emotion/core": toPath("node_modules/@emotion/react"),
+      "@emotion/styled": toPath("node_modules/@emotion/styled"),
+      "emotion-theming": toPath("node_modules/@emotion/react"),
+    };
     return config;
   },
 };
