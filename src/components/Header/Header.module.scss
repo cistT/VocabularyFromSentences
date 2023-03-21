@@ -1,0 +1,10 @@
+@use '@/styles/variables.scss';
+
+.container {
+  .app-name {
+    font-size: variables.$title-font-size-large;
+    @include variables.sp {
+      font-size: variables.$title-font-size-medium;
+    }
+  }
+}
