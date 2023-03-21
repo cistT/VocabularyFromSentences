@@ -3011,6 +3011,22 @@
   dependencies:
     "@types/yargs-parser" "*"
 
+"@typescript-eslint/eslint-plugin@^5.56.0":
+  version "5.56.0"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-5.56.0.tgz#e4fbb4d6dd8dab3e733485c1a44a02189ae75364"
+  integrity sha512-ZNW37Ccl3oMZkzxrYDUX4o7cnuPgU+YrcaYXzsRtLB16I1FR5SHMqga3zGsaSliZADCWo2v8qHWqAYIj8nWCCg==
+  dependencies:
+    "@eslint-community/regexpp" "^4.4.0"
+    "@typescript-eslint/scope-manager" "5.56.0"
+    "@typescript-eslint/type-utils" "5.56.0"
+    "@typescript-eslint/utils" "5.56.0"
+    debug "^4.3.4"
+    grapheme-splitter "^1.0.4"
+    ignore "^5.2.0"
+    natural-compare-lite "^1.4.0"
+    semver "^7.3.7"
+    tsutils "^3.21.0"
+
 "@typescript-eslint/parser@^5.42.0":
   version "5.55.0"
   resolved "https://registry.npmjs.org/@typescript-eslint/parser/-/parser-5.55.0.tgz"
@@ -3019,6 +3035,16 @@
     "@typescript-eslint/scope-manager" "5.55.0"
     "@typescript-eslint/types" "5.55.0"
     "@typescript-eslint/typescript-estree" "5.55.0"
+    debug "^4.3.4"
+
+"@typescript-eslint/parser@^5.56.0":
+  version "5.56.0"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-5.56.0.tgz#42eafb44b639ef1dbd54a3dbe628c446ca753ea6"
+  integrity sha512-sn1OZmBxUsgxMmR8a8U5QM/Wl+tyqlH//jTqCg8daTAmhAk26L2PFhcqPLlYBhYUJMZJK276qLXlHN3a83o2cg==
+  dependencies:
+    "@typescript-eslint/scope-manager" "5.56.0"
+    "@typescript-eslint/types" "5.56.0"
+    "@typescript-eslint/typescript-estree" "5.56.0"
     debug "^4.3.4"
 
 "@typescript-eslint/scope-manager@5.55.0":
@@ -3036,6 +3062,16 @@
   dependencies:
     "@typescript-eslint/types" "5.56.0"
     "@typescript-eslint/visitor-keys" "5.56.0"
+
+"@typescript-eslint/type-utils@5.56.0":
+  version "5.56.0"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/type-utils/-/type-utils-5.56.0.tgz#e6f004a072f09c42e263dc50e98c70b41a509685"
+  integrity sha512-8WxgOgJjWRy6m4xg9KoSHPzBNZeQbGlQOH7l2QEhQID/+YseaFxg5J/DLwWSsi9Axj4e/cCiKx7PVzOq38tY4A==
+  dependencies:
+    "@typescript-eslint/typescript-estree" "5.56.0"
+    "@typescript-eslint/utils" "5.56.0"
+    debug "^4.3.4"
+    tsutils "^3.21.0"
 
 "@typescript-eslint/types@5.55.0":
   version "5.55.0"
@@ -3073,7 +3109,7 @@
     semver "^7.3.7"
     tsutils "^3.21.0"
 
-"@typescript-eslint/utils@^5.45.0":
+"@typescript-eslint/utils@5.56.0", "@typescript-eslint/utils@^5.45.0":
   version "5.56.0"
   resolved "https://registry.npmjs.org/@typescript-eslint/utils/-/utils-5.56.0.tgz"
   integrity sha512-XhZDVdLnUJNtbzaJeDSCIYaM+Tgr59gZGbFuELgF7m0IY03PlciidS7UQNKLE0+WpUTn1GlycEr6Ivb/afjbhA==
@@ -4633,6 +4669,11 @@ concat-stream@^1.5.0:
     readable-stream "^2.2.2"
     typedarray "^0.0.6"
 
+confusing-browser-globals@^1.0.10:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/confusing-browser-globals/-/confusing-browser-globals-1.0.11.tgz#ae40e9b57cdd3915408a2805ebd3a5585608dc81"
+  integrity sha512-JsPKdmh8ZkmnHxDk55FZ1TqVLvEQTvoByJZRN9jzI0UjxK/QgAmsphz7PGtqgPieQZ/CQcHWXCR7ATDNhGe+YA==
+
 console-browserify@^1.1.0:
   version "1.2.0"
   resolved "https://registry.npmjs.org/console-browserify/-/console-browserify-1.2.0.tgz"
@@ -5463,6 +5504,32 @@ escodegen@^2.0.0:
   optionalDependencies:
     source-map "~0.6.1"
 
+eslint-config-airbnb-base@^15.0.0:
+  version "15.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-airbnb-base/-/eslint-config-airbnb-base-15.0.0.tgz#6b09add90ac79c2f8d723a2580e07f3925afd236"
+  integrity sha512-xaX3z4ZZIcFLvh2oUNvcX5oEofXda7giYmuplVxoOg5A7EXJMrUyqRgR+mhDhPK8LZ4PttFOBvCYDbX3sUoUig==
+  dependencies:
+    confusing-browser-globals "^1.0.10"
+    object.assign "^4.1.2"
+    object.entries "^1.1.5"
+    semver "^6.3.0"
+
+eslint-config-airbnb-typescript@^17.0.0:
+  version "17.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-airbnb-typescript/-/eslint-config-airbnb-typescript-17.0.0.tgz#360dbcf810b26bbcf2ff716198465775f1c49a07"
+  integrity sha512-elNiuzD0kPAPTXjFWg+lE24nMdHMtuxgYoD30OyMD6yrW1AhFZPAg27VX7d3tzOErw+dgJTNWfRSDqEcXb4V0g==
+  dependencies:
+    eslint-config-airbnb-base "^15.0.0"
+
+eslint-config-airbnb@^19.0.4:
+  version "19.0.4"
+  resolved "https://registry.yarnpkg.com/eslint-config-airbnb/-/eslint-config-airbnb-19.0.4.tgz#84d4c3490ad70a0ffa571138ebcdea6ab085fdc3"
+  integrity sha512-T75QYQVQX57jiNgpF9r1KegMICE94VYwoFQyMGhrvc+lB8YF2E/M/PYDaQe1AJcWaEgqLE+ErXV1Og/+6Vyzew==
+  dependencies:
+    eslint-config-airbnb-base "^15.0.0"
+    object.assign "^4.1.2"
+    object.entries "^1.1.5"
+
 eslint-config-next@13.2.4:
   version "13.2.4"
   resolved "https://registry.npmjs.org/eslint-config-next/-/eslint-config-next-13.2.4.tgz"
@@ -5512,7 +5579,7 @@ eslint-module-utils@^2.7.4:
   dependencies:
     debug "^3.2.7"
 
-eslint-plugin-import@^2.26.0:
+eslint-plugin-import@^2.26.0, eslint-plugin-import@^2.27.5:
   version "2.27.5"
   resolved "https://registry.npmjs.org/eslint-plugin-import/-/eslint-plugin-import-2.27.5.tgz"
   integrity sha512-LmEt3GVofgiGuiE+ORpnvP+kAm3h6MLZJ4Q5HCyHADofsb4VzXFsRiWj3c0OFiV+3DWFh0qg3v9gcPlfc3zRow==
@@ -5533,7 +5600,7 @@ eslint-plugin-import@^2.26.0:
     semver "^6.3.0"
     tsconfig-paths "^3.14.1"
 
-eslint-plugin-jsx-a11y@^6.5.1:
+eslint-plugin-jsx-a11y@^6.5.1, eslint-plugin-jsx-a11y@^6.7.1:
   version "6.7.1"
   resolved "https://registry.npmjs.org/eslint-plugin-jsx-a11y/-/eslint-plugin-jsx-a11y-6.7.1.tgz"
   integrity sha512-63Bog4iIethyo8smBklORknVjB0T2dwB8Mr/hIC+fBS0uyHdYYpzM/Ed+YC8VxTjlXHEWFOdmgwcDn1U2L9VCA==
@@ -5560,7 +5627,7 @@ eslint-plugin-react-hooks@^4.5.0:
   resolved "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.6.0.tgz"
   integrity sha512-oFc7Itz9Qxh2x4gNHStv3BqJq54ExXmfC+a1NjAta66IAN87Wu0R/QArgIS9qKzX3dXKPI9H5crl9QchNMY9+g==
 
-eslint-plugin-react@^7.31.7:
+eslint-plugin-react@^7.31.7, eslint-plugin-react@^7.32.2:
   version "7.32.2"
   resolved "https://registry.npmjs.org/eslint-plugin-react/-/eslint-plugin-react-7.32.2.tgz"
   integrity sha512-t2fBMa+XzonrrNkyVirzKlvn5RXzzPwRHtMvLAtVZrt8oxgnTQaYbU6SXTOO1mwQgp1y5+toMSKInnzGr0Knqg==
@@ -5620,9 +5687,9 @@ eslint-visitor-keys@^3.3.0:
   resolved "https://registry.npmjs.org/eslint-visitor-keys/-/eslint-visitor-keys-3.3.0.tgz"
   integrity sha512-mQ+suqKJVyeuwGYHAdjMFqjCyfl8+Ldnxuyp3ldiMBFKkvytrXUZWaiPCEav8qDHKty44bD+qV1IP4T+w+xXRA==
 
-eslint@8.36.0:
+eslint@^8.36.0:
   version "8.36.0"
-  resolved "https://registry.npmjs.org/eslint/-/eslint-8.36.0.tgz"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-8.36.0.tgz#1bd72202200a5492f91803b113fb8a83b11285cf"
   integrity sha512-Y956lmS7vDqomxlaaQAHVmeb4tNMp2FWIvU/RnU5BD3IKMD/MJPr76xdyr68P8tV1iNMvN2mRK0yy3c+UjL+bw==
   dependencies:
     "@eslint-community/eslint-utils" "^4.2.0"
@@ -8187,6 +8254,11 @@ nanomatch@^1.2.9:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
+natural-compare-lite@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/natural-compare-lite/-/natural-compare-lite-1.4.0.tgz#17b09581988979fddafe0201e931ba933c96cbb4"
+  integrity sha512-Tj+HTDSJJKaZnfiuw+iaF9skdPpTo2GtEly5JHnWV/hfv2Qj/9RKsGISQtLh2ox3l5EAGw487hnBee0sIJ6v2g==
+
 natural-compare@^1.4.0:
   version "1.4.0"
   resolved "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz"
@@ -8400,7 +8472,7 @@ object-visit@^1.0.0:
   dependencies:
     isobject "^3.0.0"
 
-object.assign@^4.1.3, object.assign@^4.1.4:
+object.assign@^4.1.2, object.assign@^4.1.3, object.assign@^4.1.4:
   version "4.1.4"
   resolved "https://registry.npmjs.org/object.assign/-/object.assign-4.1.4.tgz"
   integrity sha512-1mxKf0e58bvyjSCtKYY4sRe9itRk3PJpquJOjeIkz885CczcI4IvJJDLPS72oowuSh+pBxUFROpX+TU++hxhZQ==
@@ -8410,7 +8482,7 @@ object.assign@^4.1.3, object.assign@^4.1.4:
     has-symbols "^1.0.3"
     object-keys "^1.1.1"
 
-object.entries@^1.1.0, object.entries@^1.1.6:
+object.entries@^1.1.0, object.entries@^1.1.5, object.entries@^1.1.6:
   version "1.1.6"
   resolved "https://registry.npmjs.org/object.entries/-/object.entries-1.1.6.tgz"
   integrity sha512-leTPzo4Zvg3pmbQ3rDK69Rl8GQvIqMWubrkxONG9/ojtFE2rD9fjMKfSI5BxW3osRH1m6VdzmqK8oAY9aT4x5w==
@@ -10828,6 +10900,11 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz"
   integrity sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA==
+
+typescript-eslint@^0.0.1-alpha.0:
+  version "0.0.1-alpha.0"
+  resolved "https://registry.yarnpkg.com/typescript-eslint/-/typescript-eslint-0.0.1-alpha.0.tgz#285d68a4e96588295cd436278801bcb6a6b916c1"
+  integrity sha512-1hNKM37dAWML/2ltRXupOq2uqcdRQyDFphl+341NTPXFLLLiDhErXx8VtaSLh3xP7SyHZdcCgpt9boYYVb3fQg==
 
 typescript@4.9.5:
   version "4.9.5"

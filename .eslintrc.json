@@ -3,6 +3,36 @@
     "next/core-web-vitals",
     "plugin:storybook/recommended",
     "plugin:import/warnings",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "airbnb",
+    "airbnb-typescript",
     "prettier"
-  ]
+  ],
+  "plugins": ["@typescript-eslint", "react"],
+  "parser": "@typescript-eslint/parser",
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "parserOptions": {
+        "project": ["./tsconfig.json"]
+      }
+    }
+  ],
+  "rules": {
+    "import/order": [
+      "error",
+      {
+        "alphabetize": {
+          "order": "asc"
+        }
+      }
+    ],
+    "no-console": "error",
+    "react/function-component-definition": [
+      2,
+      { "namedComponents": "arrow-function" }
+    ],
+    "react/react-in-jsx-scope": "off"
+  }
 }
