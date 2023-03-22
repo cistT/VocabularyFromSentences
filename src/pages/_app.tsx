@@ -1,6 +1,9 @@
-import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
+/* eslint-disable react/jsx-props-no-spreading */
+import type { AppProps } from 'next/app';
+import { trpc } from '@/utils/trpc';
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
-}
+const App = ({ Component, pageProps }: AppProps) => (
+  <Component {...pageProps} />
+);
+
+export default trpc.withTRPC(App);
