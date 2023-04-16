@@ -1,0 +1,7 @@
+@use '@/styles/variables.scss';
+
+.button {
+  margin-top: 20px;
+  width: 100vw;
+  height: variables.$button-height-size-medium;
+}
