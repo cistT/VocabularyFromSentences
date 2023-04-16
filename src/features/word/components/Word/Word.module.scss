@@ -1,0 +1,11 @@
+.container {
+  .word {
+    margin: 20px 0 80px 0;
+    text-align: center;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
