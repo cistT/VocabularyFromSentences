@@ -1,4 +1,4 @@
-import { Button } from '@mui/material';
+import { Button, Typography } from '@mui/material';
 import { useRouter } from 'next/router';
 import React, { useContext } from 'react';
 import styles from './index.module.scss';
@@ -14,6 +14,22 @@ const Index = () => {
   const word = wordList.filter((w) => w.id === id)[0];
 
   const { browserBack } = useBrowserBack();
+
+  if (!word) {
+    return (
+      <>
+        <Typography component='div'>データを表示できませんでした。</Typography>
+
+        <Button
+          variant='outlined'
+          onClick={browserBack}
+          className={styles.button}
+        >
+          戻る
+        </Button>
+      </>
+    );
+  }
 
   return (
     <>
