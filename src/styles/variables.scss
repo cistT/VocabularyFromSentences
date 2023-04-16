@@ -1,0 +1,11 @@
+$break-point-sp: 600px;
+@mixin sp {
+  @media (max-width: ($break-point-sp)) {
+    @content;
+  }
+}
+
+$title-font-size-large: 30px;
+$title-font-size-medium: 20px;
+
+$button-height-size-medium: 60px;
