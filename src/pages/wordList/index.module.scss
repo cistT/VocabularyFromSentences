@@ -1,0 +1,10 @@
+@use '@/styles/variables.scss';
+
+.header {
+  text-align: center;
+}
+.button {
+  margin-top: 20px;
+  width: 100vw;
+  height: variables.$button-height-size-medium;
+}
