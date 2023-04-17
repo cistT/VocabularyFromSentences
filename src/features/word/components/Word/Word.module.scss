@@ -1,8 +1,20 @@
 .container {
+  text-align: center;
   .word {
-    margin: 20px 0 80px 0;
-    text-align: center;
+    margin: 20px 0 40px 0;
   }
+
+  .speech-button {
+    height: 80px;
+    width: 80px;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  .speech-button > .icon {
+    height: 60px;
+    width: 60px;
+  }
+
   .form {
     display: flex;
     flex-direction: column;
